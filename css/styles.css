@@ -8,7 +8,7 @@ body, h1, h2, h3, p, ul, li, header, nav, article, section, footer {
 /* 字体和背景 */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #fff;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
 
 /* 页面头部 */
 header {
-    background-color: #CCFFCC;
+    background-color: #beedc7;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -25,7 +25,7 @@ header {
 /* Navigation Bar */
 nav ul {
     list-style-type: none;
-    background: #666666;
+    background: #19caad;
     text-align: center;
     padding: 10px 0;
 }
@@ -43,13 +43,13 @@ nav ul li a {
 
 /* 文章和段落样式 */
 .text-block {
-    background-color: #f0f0f0; /* 背景色 */
+    background-color: #f8f6b8; /* 背景色 */
     border: 1px solid #ccc;    /* 边框 */
-    padding: 20px;             /* 内边距 */
-    margin: 20px;              /* 外边距 */
+    padding: 10px;             /* 内边距 */
+    margin: auto;              /* 外边距 */
     font-size: 16px;           /* 字体大小 */
     color: #333;               /* 字体颜色 */
-    width: 300px;              /* 宽度 */
+    width: 92%;              /* 宽度 */
 }
 
 
@@ -62,14 +62,14 @@ article {
 }
 
 h1, h2, h3 {
-    color: #6666cc;
+    color: #333333;
 }
 
 /* 页脚 */
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
+    background-color: #19caad;
     color: white;
     position: fixed;
     left: 0;
