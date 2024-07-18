@@ -7,9 +7,9 @@ function loadHeader() {
     <nav>
         <ul>
             <li><a href="https://swangnice.github.io/">Home</a></li>
-            <li><a href="#about">关于我</a></li>
-            <li><a href="#blog">博客文章</a></li>
-            <li><a href="#contact">联系方式</a></li>
+            <li><a href="#blog">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Me</a></li>
         </ul>
     </nav>
     `;
