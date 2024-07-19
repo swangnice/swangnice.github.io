@@ -65,6 +65,42 @@ h1, h2, h3 {
     color: #333333;
 }
 
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-text {
+    color: rgb(0, 0, 0); /* Ensures the text is readable on the background image */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; /* Add padding to ensure the text is not too close to the edges */
+    word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+}
+
 /* 页脚 */
 footer {
     text-align: center;
