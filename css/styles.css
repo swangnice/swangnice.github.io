@@ -65,6 +65,8 @@ h1, h2, h3 {
     color: #333333;
 }
 
+/* Project Container */
+
 .scroll-container {
     display: flex;
     overflow-x: auto;
@@ -101,7 +103,7 @@ h1, h2, h3 {
     word-wrap: break-word; /* Allows long words to break and wrap to the next line */
 }
 
-/* 页脚 */
+/* Page footer */
 footer {
     text-align: center;
     padding: 10px 0;

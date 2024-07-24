@@ -6,7 +6,7 @@ function loadHeader() {
     </header>
     <nav>
         <ul>
-            <li><a href="https://swangnice.github.io/">Home</a></li>
+            <li><a href="https://swangnice.github.io">Home</a></li>
             <li><a href="https://swangnice.github.io/#project">Projects</a></li>
             <li><a href="https://swangnice.github.io/#contact">Contact</a></li>
             <li><a href="https://swangnice.github.io/#about">About Me</a></li>
