@@ -103,14 +103,65 @@ h1, h2, h3 {
     word-wrap: break-word; /* Allows long words to break and wrap to the next line */
 }
 
+/* Blog Categories */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion_child0 {
+  background-color: #fbf7e1;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: '\002B';  /* Unicode 字符 + 号 */
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+ 
+.active:after { 
+  content: "\2212";  /* Unicode 字符 - 号 */
+}
+
+
+
 /* Page footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 3px 0;
     background-color: #19caad;
     color: white;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    
 }

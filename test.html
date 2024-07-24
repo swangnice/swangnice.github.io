@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>菜鸟教程(runoob.com)</title>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: '\002B';  /* Unicode 字符 + 号 */
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+ 
+.active:after { 
+  content: "\2212";  /* Unicode 字符 - 号 */
+}
+</style>
+</head>
+<body>
+
+<h2>手风琴动画</h2>
+<p>电脑按钮显示或隐藏内容</p>
+
+<button class="accordion">Runoob 1</button>
+<div class="panel">
+  <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+</div>
+ 
+<button class="accordion">Runoob 2</button>
+<div class="panel">
+  <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+</div>
+ 
+<button class="accordion">Runoob 3</button>
+<div class="panel">
+  <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
