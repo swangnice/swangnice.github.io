@@ -45,6 +45,8 @@ You can combine them **_like this_**
 ## Images //TODO
 
 ![pic](pic/test_blog1.jpg)
+<img src="pic/test_blog1.jpg" alt="i2c" width="500"/>
+
 
 ## code
 

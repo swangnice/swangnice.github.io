@@ -16,6 +16,13 @@ async function loadMarkdown(url) {
 // 自定义的 Markdown 转 HTML 转换函数
 function convertMarkdownToHTML(markdown) {
     let html = markdown;
+    const htmlTags = [];
+
+    html = html.replace((/<[^>]*>/gim) , (match) => {
+    
+        htmlTags.push(match);
+        return `<!--HTMLTAG${htmlTags.length - 1}-->`;
+    });
 
     // 转换标题
     html = html.replace(/^###### (.*$)/gim, '<h6>$1</h6>');
@@ -56,8 +63,13 @@ function convertMarkdownToHTML(markdown) {
 
 
 
-    // 转换段落
+    // Convert Paragraph
     html = html.replace(/^\s*(?!<h|<ul|<ol|<li|<b|<i|<a)(.*)\s*$/gim, '<p>$1</p>');
+
+
+    html = html.replace(/<!--HTMLTAG(\d+)-->/gim, (match, index) => {
+        return htmlTags[index];
+    });
 
     return html.trim();
 }
