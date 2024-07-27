@@ -8,7 +8,7 @@ function loadHeader() {
         <ul>
             <li><a href="https://swangnice.github.io">Home</a></li>
             <li><a href="https://swangnice.github.io/pages/projects.html">Projects</a></li>
-            <li><a href="https://swangnice.github.io/pages/blogs.html">Blogs</a></li>
+            <li><a href="https://swangnice.github.io/pages/blogs.html">Notes</a></li>
             <li><a href="https://swangnice.github.io/pages/about.html/">Contact</a></li>
             <li><a href="https://swangnice.github.io/pages/about.html/">About Me</a></li>
         </ul>
